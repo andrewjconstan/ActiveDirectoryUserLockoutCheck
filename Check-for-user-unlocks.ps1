@@ -5,7 +5,7 @@ function Send-SlackMessage {
     # Add the "Incoming WebHooks" integration to get started: https://slack.com/apps/A0F7XDUAZ-incoming-webhooks
     param (
         [Parameter(Mandatory=$true, Position=0)]$Text,
-        $Url="https://hooks.slack.com/services/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", #Put your URL here so you don't have to specify it every time.
+        $Url="https://hooks.slack.com/services/<**UNIQUE-WEBHOOK**>", #Put your URL here so you don't have to specify it every time.
         # Parameters below are optional and will fall back to the default setting for the webhook.
         $Username, # Username to send from.
         $Channel, # Channel to post message. Can be in the format "@username" or "#channel"
